@@ -8,7 +8,7 @@ Claude Code plugin for workflow automation - git shipping, deployments, Linear i
 claude plugins install github:mkurecka/michal-workflows
 ```
 
-## Commands (16 total)
+## Commands (12 total)
 
 ### Git & Deployment
 | Command | Usage | Description |
@@ -29,14 +29,10 @@ claude plugins install github:mkurecka/michal-workflows
 | `/youtube` | `/youtube "topic" [type]` | YouTube video content |
 | `/shorts` | `/shorts "topic" [count]` | TikTok, Shorts, Reels scripts |
 
-### Project & Data Management
+### SEO
 | Command | Usage | Description |
 |---------|-------|-------------|
-| `/new-project` | `/new-project name [template]` | Create new repo with setup |
-| `/airtable-fix` | `/airtable-fix [table] [action]` | Fix Airtable error records |
 | `/seo-optimize` | `/seo-optimize [scope]` | Improve project SEO |
-| `/snap-render` | `/snap-render [action] [template]` | Render SnapTemplate images/PDFs |
-| `/mailerlite-setup` | `/mailerlite-setup [action]` | Manage email marketing groups |
 
 ## Examples
 
@@ -62,12 +58,9 @@ claude plugins install github:mkurecka/michal-workflows
 /youtube "tutorial" both        # Long + shorts
 /shorts "hacks" 5 all           # 5 scripts for all platforms
 
-# Project management
-/new-project my-app node        # Create Node.js project
-/airtable-fix Products retry    # Retry failed records
+# SEO
 /seo-optimize full              # Full SEO audit
-/snap-render bulk               # Bulk render templates
-/mailerlite-setup create-group "AI Guide"
+/seo-optimize meta              # Just meta tags
 ```
 
 ## Requirements
@@ -77,8 +70,6 @@ claude plugins install github:mkurecka/michal-workflows
 | `/linear-next` | `LINEAR_API_KEY` env variable |
 | `/cf-deploy` | `wrangler` CLI installed |
 | `/vps-deploy` | SSH access configured |
-| `/mailerlite-setup` | `MAILERLITE_API_KEY` env variable |
-| `/snap-render` | SnapTemplate API access |
 | Content commands | Notion + Airtable MCP servers |
 
 ## License
