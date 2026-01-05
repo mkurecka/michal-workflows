@@ -1,0 +1,8 @@
+{
+  "name": "michal-workflows",
+  "version": "1.0.0",
+  "description": "Personal workflow automation for Michal - git shipping, deployments, Linear issues, and content pipelines",
+  "author": "Michal Kurecka",
+  "commands_dir": "commands",
+  "skills_dir": "skills"
+}
